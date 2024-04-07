@@ -14,3 +14,4 @@ class JpboxItem(scrapy.Item):
     jp_duration = scrapy.Field()
     jp_genres = scrapy.Field()
     jp_release = scrapy.Field()
+    jp_distributors = scrapy.Field()
