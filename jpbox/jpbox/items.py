@@ -7,6 +7,10 @@ import scrapy
 
 
 class JpboxItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    jp_copies = scrapy.Field()
+    jp_title = scrapy.Field()
+    jp_director = scrapy.Field()
+    jp_nationality = scrapy.Field()
+    jp_duration = scrapy.Field()
+    jp_genres = scrapy.Field()
+    jp_release = scrapy.Field()
