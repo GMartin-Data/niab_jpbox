@@ -8,7 +8,7 @@
 from itemadapter import ItemAdapter
 from loguru import logger
 
-from .utils import convert_dates, convert_duration
+from .utils import convert_jp_dates, convert_duration
 
 
 class JpboxPipeline:
@@ -26,7 +26,7 @@ class JpboxPipeline:
         # jp_release (convert it to format 'YYYY-MM-DD')
         jp_release = adapter.get("jp_release")
         if jp_release is not None:
-            adapter["jp_release"] = convert_dates(jp_release)
+            adapter["jp_release"] = convert_jp_dates(jp_release)
         else:
             adapter["jp_release"] = None
 
